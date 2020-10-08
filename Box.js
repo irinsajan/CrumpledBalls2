@@ -6,10 +6,10 @@ class Box{
         this.height = height;
     }
     display(){
-        var pos = this.body.position;
+        
         rectMode(CENTER);
         fill("white");
-        rect(pos.x,pos.y,this.width,this.height);
+        rect(this.body.position.x,this.body.position.y,this.width,this.height);
         
     }
 }
