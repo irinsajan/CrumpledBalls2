@@ -6,9 +6,10 @@ const Body = Matter.Body;
 var engine,world;
 var box1,box2,box3;
 var ground;
-var paper,paperImage;
+var paper, dustbinImage;
 
 function preload(){
+	dustbinImage = loadImage("dustbingreen.png");
 }
 
 
@@ -40,6 +41,8 @@ function draw() {
   box2.display();
   box3.display();
   paper.display();
+	
+  image(dustbinImage,600,height-80,200,200);
 }
 
 function keyPressed(){
